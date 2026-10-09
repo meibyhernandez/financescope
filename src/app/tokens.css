@@ -1,0 +1,105 @@
+:root {
+  /* Brand and semantic colors */
+  --color-forest-950: #17382a;
+  --color-forest-900: #1f4935;
+  --color-forest-800: #285b43;
+  --color-forest-700: #357154;
+  --color-moss-600: #6f955d;
+  --color-moss-500: #86a970;
+  --color-sage-300: #b8cfa9;
+  --color-sage-200: #d7e4cc;
+  --color-sage-100: #eaf1e4;
+  --color-cream-100: #fffdf7;
+  --color-cream-200: #f8f2e5;
+  --color-cream-300: #eee3cf;
+  --color-gold-500: #e4b75c;
+  --color-gold-600: #c9912f;
+  --color-terracotta-500: #c8734f;
+  --color-terracotta-600: #a9563a;
+  --color-berry-500: #a94f63;
+  --color-ink: #21342a;
+  --color-text-muted: #68776f;
+  --color-border: #d8d9c7;
+  --color-white: #ffffff;
+
+  --color-bg-page: var(--color-cream-200);
+  --color-bg-surface: var(--color-cream-100);
+  --color-bg-soft: var(--color-sage-100);
+  --color-text-primary: var(--color-ink);
+  --color-text-secondary: var(--color-text-muted);
+  --color-action-primary: var(--color-forest-800);
+  --color-action-primary-hover: var(--color-forest-900);
+  --color-focus: #2d6cdf;
+  --color-status-on-track: #447a4f;
+  --color-status-warning: #9a6815;
+  --color-status-over-budget: #a84545;
+
+  /* Typography */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-ui: "Nunito Sans", "Segoe UI", sans-serif;
+  --font-pixel: "Silkscreen", "Courier New", monospace;
+  --text-12: 0.75rem;
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+  --text-18: 1.125rem;
+  --text-20: 1.25rem;
+  --text-24: 1.5rem;
+  --text-32: 2rem;
+  --text-40: 2.5rem;
+  --leading-tight: 1.15;
+  --leading-heading: 1.25;
+  --leading-body: 1.55;
+  --weight-regular: 400;
+  --weight-medium: 600;
+  --weight-bold: 750;
+
+  /* Spacing: 4px base grid */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Shape and depth */
+  --radius-control: 0.625rem;
+  --radius-card: 1rem;
+  --radius-panel: 1.5rem;
+  --radius-pill: 999px;
+  --border-thin: 1px;
+  --border-accent: 2px;
+  --shadow-card: 0 3px 0 rgba(23, 56, 42, 0.08), 0 10px 24px rgba(23, 56, 42, 0.06);
+  --shadow-raised: 0 5px 0 rgba(23, 56, 42, 0.12), 0 18px 40px rgba(23, 56, 42, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(45, 108, 223, 0.28);
+
+  /* Layout */
+  --sidebar-width: 16.5rem;
+  --rail-width: 5.5rem;
+  --content-max: 90rem;
+  --page-gutter-desktop: 2rem;
+  --page-gutter-tablet: 1.5rem;
+  --page-gutter-mobile: 1rem;
+  --section-gap: 2rem;
+  --grid-gap: 1.25rem;
+  --touch-target-min: 2.75rem;
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-base: 220ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
